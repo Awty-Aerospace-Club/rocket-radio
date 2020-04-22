@@ -3,12 +3,15 @@
 #include <Adafruit_MPL3115A2.h>
 #include <Adafruit_LSM6DS33.h>
 
+#define DECIMAL_PLACES 4
+
 Adafruit_MPL3115A2 altimeter = Adafruit_MPL3115A2();
 Adafruit_LSM6DS33 accelerometer;
-SoftwareSerial radioSerial(5, 6);
+SoftwareSerial radioSerial(7, 8);
 
 void setup() {
-  accelerometer.begin_I2C()
+  accelerometer.begin_I2C();
+  radioSerial.begin(9600);
 }
 
 void loop() {
@@ -19,19 +22,20 @@ void loop() {
   sensors_event_t temp;
   accelerometer.getEvent(&accel, &gyro, &temp);
 
-  float data_points[7] = {
+  float data_points[8] = {
+    (float) millis() / 1000,
+    altitude,
     accel.acceleration.x,
     accel.acceleration.y,
     accel.acceleration.z,
     gyro.gyro.x,
     gyro.gyro.y,
-    gyro.gyro.z,
-    altitude
-  }
+    gyro.gyro.z
+  };
 
-  for(i=0; i<7; i++) {
-    radioSerial.print(String(data_points[i]))
-    radioSerial.print(",")
+  for(int i=0; i<8; i++) {
+    radioSerial.print(data_points[i], DECIMAL_PLACES);
+    radioSerial.print(",");
   }
-  radioSerial.println()
+  radioSerial.println();
 }
