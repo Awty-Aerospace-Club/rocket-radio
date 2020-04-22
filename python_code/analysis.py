@@ -5,7 +5,8 @@ data = csvquery.open_csv("output.csv")
 db = mysql.connector.connect(
     host="",
     user="",
-    passwd=""
+    passwd="",
+    database=""
 )
 
 cursor = db.cursor()
