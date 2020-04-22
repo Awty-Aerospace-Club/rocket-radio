@@ -14,4 +14,4 @@ Telecommunications with model rockets
 
 - [accelerometer & gyro](https://www.adafruit.com/product/4480)
 
-- [optional antenna](https://www.ebay.com/itm/433MHZ-High-Gain-Antenna-SMA-Within-Needle-Rubber-Glue-Stick-6DBI-MA/131535083764%)
+- [antenna (model doesn't matter)](https://www.ebay.com/itm/433MHZ-High-Gain-Antenna-SMA-Within-Needle-Rubber-Glue-Stick-6DBI-MA/131535083764)
