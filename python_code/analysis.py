@@ -2,11 +2,14 @@
 soon to come"""
 import csvquery, mysql.connector, yaml
 
+with open('databas-cfg.yaml') as cfg:
+    config = yaml.load(cfg, Loader=yaml.FullLoader)
+
 data = csvquery.open_csv("output.csv")
 
 db = mysql.connector.connect(
-    host="",
-    user="",
+    host=config[host],
+    user=config[user],
     database="RocketRadio"
 )
 
