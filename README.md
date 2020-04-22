@@ -1,6 +1,6 @@
 # rocket-radio
 
-Live telecommunication for model rockets.
+Live telecommunication for model rockets
 
 ## Hardware
 
