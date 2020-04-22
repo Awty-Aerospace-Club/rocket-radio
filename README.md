@@ -10,6 +10,8 @@ Live telecommunication for model rockets.
 
 - [100mAh LiPo battery](https://www.adafruit.com/product/1570)
 
+- [JST connector for battery](https://www.adafruit.com/product/1769)
+
 - [LiPo battery charger](https://www.adafruit.com/product/1904)
 
 - [altitude sensor](https://www.adafruit.com/product/1893)
