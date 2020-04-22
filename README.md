@@ -18,6 +18,6 @@ Live telecommunication for model rockets.
 
 - [accelerometer & gyro sensor](https://www.adafruit.com/product/4480)
 
-- [antenna (optional)](https://www.amazon.com/433Mhz-6dbi-Antenna-Radio-rotatable/dp/B071DJLM53/)
+- [antenna (optional)](https://www.amazon.com/NOYITO-Antenna-Omnidirectional-430-470MHz-Connector/dp/B07J6GYKTZ/)
 
 - [2x 10uF capacitor (optional)](https://www.adafruit.com/product/2195)
