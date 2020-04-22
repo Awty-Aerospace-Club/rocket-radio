@@ -1,1 +1,1 @@
-python3 receiver.py
+python3 python_code/receiver.py
