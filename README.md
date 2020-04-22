@@ -1,6 +1,6 @@
 # rocket-radio
 
-Telecommunications with model rockets
+Live telecommunications for model rockets.
 
 ## Hardware
 
@@ -12,6 +12,6 @@ Telecommunications with model rockets
 
 - [altitude sensor](https://www.adafruit.com/product/1893)
 
-- [accelerometer & gyro](https://www.adafruit.com/product/4480)
+- [accelerometer & gyro sensor](https://www.adafruit.com/product/4480)
 
-- [antenna (model doesn't matter)](https://www.ebay.com/itm/433MHZ-High-Gain-Antenna-SMA-Within-Needle-Rubber-Glue-Stick-6DBI-MA/131535083764)
+- [antenna (optional)](https://www.ebay.com/itm/433MHZ-High-Gain-Antenna-SMA-Within-Needle-Rubber-Glue-Stick-6DBI-MA/131535083764)
