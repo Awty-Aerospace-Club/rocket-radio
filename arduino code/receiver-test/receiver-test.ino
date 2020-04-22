@@ -6,6 +6,6 @@ void setup() {
 }
 
 void loop() {
-  Serial.println(String(millis()-startTime) + ",123,");
+  Serial.println(String(millis()-startTime) + ",1,2,3,4,5,6,7,");
   delay(1000);
 }
