@@ -1,3 +1,4 @@
+# receiver.py's purpose is to unencode received serialized data from the arduino, then write it to csv
 import serial, csvquery
 
 fields = [
