@@ -8,7 +8,7 @@ db = mysql.connector.connect(
     host="",
     user="",
     passwd="",
-    database=""
+    database="RocketRadio"
 )
 
 cursor = db.cursor()
