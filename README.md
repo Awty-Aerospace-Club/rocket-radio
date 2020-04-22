@@ -10,6 +10,8 @@ Live telecommunications for model rockets.
 
 - [100mAh LiPo battery](https://www.adafruit.com/product/1570)
 
+- [LiPo battery charger](https://www.adafruit.com/product/1904)
+
 - [altitude sensor](https://www.adafruit.com/product/1893)
 
 - [accelerometer & gyro sensor](https://www.adafruit.com/product/4480)
