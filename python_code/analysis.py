@@ -2,6 +2,17 @@
 soon to come"""
 import csv, MySQLdb, yaml
 
+fields = [
+    "time",
+    "altitude",
+    "accelX",
+    "accelY",
+    "accelZ",
+    "gyroX",
+    "gyroY",
+    "gyroZ",
+]
+
 with open('database-cfg.yaml') as cfg:
     config = yaml.load(cfg, Loader=yaml.FullLoader)
 
@@ -12,11 +23,11 @@ db = MySQLdb.connect(
 )
 
 cursor = db.cursor()
-data = csv.reader(file("output.csv"))
+data = csv.reader(open("output.csv", "r"))
 
 for row in data:
-    cursor.execute('INSERT INTO SensorData(time, altitude, accelX, accelY, accelZ, gyroX, gyroY, gyroZ)' \
-    'VALUES("%s", "%s", "%s")', row)
+    cursor.execute(f'INSERT INTO SensorData({", ".join(fields)})' \
+    'VALUES("%s", "%s", "%s", "%s", "%s", "%s", "%s")', row)
 
 db.commit()
 cursor.close()
