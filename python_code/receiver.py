@@ -41,11 +41,29 @@ else:
 s = serial.Serial(port)
 file = open("output.csv", "w+", newline="")
 
+def validate(line):
+    try:
+        line = line.decode("ASCII")
+        assert len(line) > 3 and line.count(",") == len(fields) and line[-2:] == "\r\n"
+        
+        line = line[:-3]
+        for num in line.split(","):
+            float(num)
+        
+        return line
+    except:
+        print("[ERROR] received bad data")
+        return False
+        
+
 print(",".join(fields), file=file)
 while True:
     line = s.readline()
     if not line: break
-    line = line.decode("ASCII")[:-3]
+
+    line = validate(line)
+    if not line: continue
+
     print(line)
     print(line, file=file)
 
