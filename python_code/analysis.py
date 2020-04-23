@@ -1,11 +1,6 @@
 """ This file's purpose is to convert csv produced by receiver.py into database fields, which will be inserted into a MySQL db, that can be addressed by a react-graphing app...
 soon to come"""
-import csv
-
-with open('databas-cfg.yaml') as cfg:
-    config = yaml.load(cfg, Loader=yaml.FullLoader)
-
-data = csvquery.open_csv("output.csv")
+import csv, MySQLdb
 
 db = mysql.connector.connect(
     host=config[host],
@@ -13,6 +8,17 @@ db = mysql.connector.connect(
     database="RocketRadio"
 )
 
+with open('databas-cfg.yaml') as cfg:
+    config = yaml.load(cfg, Loader=yaml.FullLoader)
+
 cursor = db.cursor()
+data = csv.reader(file("output.csv"))
+
+for row in data:
+    cursor.execute()
+
+
+
+
 
 
