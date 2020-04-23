@@ -2,17 +2,6 @@
 soon to come"""
 import csv, MySQLdb, yaml
 
-fields = [
-    "time",
-    "altitude",
-    "accelX",
-    "accelY",
-    "accelZ",
-    "gyroX",
-    "gyroY",
-    "gyroZ",
-]
-
 with open('database-cfg.yaml') as cfg:
     config = yaml.load(cfg, Loader=yaml.FullLoader)
 
