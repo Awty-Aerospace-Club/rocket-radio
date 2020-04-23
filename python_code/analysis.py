@@ -2,14 +2,14 @@
 soon to come"""
 import csv, MySQLdb
 
+with open('databas-cfg.yaml') as cfg:
+    config = yaml.load(cfg, Loader=yaml.FullLoader)
+
 db = MySQLdb.connect(
     host=config[host],
     user=config[user],
     database="RocketRadio"
 )
-
-with open('databas-cfg.yaml') as cfg:
-    config = yaml.load(cfg, Loader=yaml.FullLoader)
 
 cursor = db.cursor()
 data = csv.reader(file("output.csv"))
