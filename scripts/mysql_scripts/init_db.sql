@@ -1,4 +1,4 @@
 CREATE DATABASE RocketRadio;
 USE RocketRadio;
 
-CREATE TABLE SensorData (time double, example_sensor double);
+CREATE TABLE SensorData (time double, altitude double, accelX, accelY, accelZ, gyroX, gyroY, gyroZ);
