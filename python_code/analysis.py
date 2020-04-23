@@ -15,7 +15,8 @@ cursor = db.cursor()
 data = csv.reader(file("output.csv"))
 
 for row in data:
-    cursor.execute()
+    cursor.execute('INSERT INTO SensorData(time, altitude, accelX, accelY, accelZ, gyroX, gyroY, gyroZ)' \
+    'VALUES("%s", "%s", "%s")', row)
 
 
 
