@@ -1,3 +1,4 @@
+# receiver.py's purpose is to unencode received serialized data from the arduino, then write it to csv
 import serial, csvquery
 
 fields = [
@@ -50,6 +51,5 @@ while True:
 
 file.close()
 
-# once the code gets here, it means the arduino has been unplugged and the mission is over, time for data analysis
+# once the code gets here, arduino is unplugged and the mission is over, time for data analysis
 
-data = csvquery.open_csv("output.csv")
