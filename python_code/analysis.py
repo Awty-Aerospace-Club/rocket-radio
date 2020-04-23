@@ -2,7 +2,7 @@
 soon to come"""
 import csv, MySQLdb
 
-with open('databas-cfg.yaml') as cfg:
+with open('database-cfg.yaml') as cfg:
     config = yaml.load(cfg, Loader=yaml.FullLoader)
 
 db = MySQLdb.connect(
