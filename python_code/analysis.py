@@ -2,7 +2,7 @@
 soon to come"""
 import csv, MySQLdb
 
-db = mysql.connector.connect(
+db = MySQLdb.connect(
     host=config[host],
     user=config[user],
     database="RocketRadio"
