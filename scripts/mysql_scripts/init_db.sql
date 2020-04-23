@@ -1,4 +1,4 @@
 CREATE DATABASE RocketRadio;
-USE rocket_radio;
+USE RocketRadio;
 
 CREATE TABLE SensorData (time double, example_sensor double);
