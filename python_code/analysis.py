@@ -6,8 +6,8 @@ with open('database-cfg.yaml') as cfg:
     config = yaml.load(cfg, Loader=yaml.FullLoader)
 
 db = MySQLdb.connect(
-    host=config[host],
-    user=config[user],
+    host=config['host'],
+    user=config['username'],
     database="RocketRadio"
 )
 
