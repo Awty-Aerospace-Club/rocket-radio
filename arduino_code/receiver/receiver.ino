@@ -9,6 +9,6 @@ void setup() {
 
 void loop() {
   while(radioSerial.available()) {
-    Serial.print(radioSerial.read())
+    Serial.print(radioSerial.read());
   }
 }
