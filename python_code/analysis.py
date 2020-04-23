@@ -25,9 +25,10 @@ db = MySQLdb.connect(
 cursor = db.cursor()
 data = csv.reader(open("output.csv", "r"))
 
-for row in data:
+fields = data[0]
+for row in data[1:]:
     cursor.execute(f'INSERT INTO SensorData({", ".join(fields)})' \
-    'VALUES("%s", "%s", "%s", "%s", "%s", "%s", "%s")', row)
+    'VALUES("%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s")', row)
 
 db.commit()
 cursor.close()
