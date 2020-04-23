@@ -1,5 +1,5 @@
 # receiver.py's purpose is to unencode received serialized data from the arduino, then write it to csv
-import serial, csvquery
+import serial, csvquery, math
 
 fields = [
     "time",
@@ -53,3 +53,6 @@ file.close()
 
 # once the code gets here, arduino is unplugged and the mission is over, time for data analysis
 
+dataset = csvquery.open_csv("output.csv")
+dataset.replace(["gyroX", "gyroY", "gyroZ"], math.degrees)
+dataset.save_csv("output.csv")
