@@ -1,3 +1,4 @@
 *.code-workspace
 *.csv
 *.svg
+python_code/database-cfg.yaml
