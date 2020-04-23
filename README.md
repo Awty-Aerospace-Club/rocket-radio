@@ -4,6 +4,8 @@ Live telecommunication for model rockets
 
 ## Hardware
 
+See the [bill of materials](info/bill-of-materials.xlsx) for price information.
+
 - [2x 3.3v arduinos](https://www.sparkfun.com/products/12587)
 
 - [2x HC-12 radio modules](https://www.banggood.com/custlink/3KGvMGgRvG)
