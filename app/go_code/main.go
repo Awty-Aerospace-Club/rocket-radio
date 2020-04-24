@@ -1,9 +1,10 @@
 package main
 
 import (
-	"street-show/app/go_code/dbcrud"
+	"rocket-radio/app/go_code/dbcrud"
 
 	"github.com/gin-gonic/gin"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 func init() {
