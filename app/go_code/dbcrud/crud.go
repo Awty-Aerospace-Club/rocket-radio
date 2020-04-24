@@ -48,3 +48,11 @@ func Open(filename string) {
 		log.Fatalf("database opening error: %s\n", err)
 	}
 }
+
+func (sd *SensorData) SelectAll() error {
+	if err := DB.Find(&sd).Error; err != nil {
+		return err
+	}
+	return nil
+
+}
