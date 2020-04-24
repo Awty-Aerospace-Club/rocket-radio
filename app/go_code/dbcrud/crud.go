@@ -43,7 +43,7 @@ func Open(filename string) {
 	if err != nil {
 		log.Fatalf("unmarshalling problem: %s\n", err)
 	}
-	DB, err = gorm.Open("mysql", fmt.Sprintf("%s:%s@tcp(localhost:3306)/RocketRadio", infoStruct.User, infoStruct.Password, infoStruct.Port))
+	DB, err = gorm.Open("mysql", fmt.Sprintf("%s:%s@tcp(localhost:3306)/RocketRadio", infoStruct.Host, infoStruct.Username)
 	if err != nil {
 		log.Fatalf("database opening error: %s\n", err)
 	}
