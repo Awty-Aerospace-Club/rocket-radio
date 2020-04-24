@@ -54,5 +54,4 @@ func (sd *SensorData) SelectAll() error {
 		return err
 	}
 	return nil
-
 }
