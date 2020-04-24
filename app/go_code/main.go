@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"rocket-radio/app/go_code/dbcrud"
 
 	"github.com/gin-gonic/gin"
@@ -13,6 +14,14 @@ func init() {
 
 func main() {
 	r := gin.Default()
-	r.GET("/api/all")
+	r.GET("/api/all", func(c *gin.Context) {
+		scanTo := &dbcrud.SensorData{}
+		err := scanTo.SelectAll()
+		if err != nil {
+			log.Fatalf("SelectAll err: %s\n", err)
+			c.Status(404)
+		}
+		c.JSON(200, scanTo)
+	})
 	r.Run()
 }
