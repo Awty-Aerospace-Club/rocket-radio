@@ -3,7 +3,14 @@ also holds the datastructures that the fetch api utilizes
 */
 package dbcrud
 
-import "github.com/jinzhu/gorm"
+import (
+	"fmt"
+	"io/ioutil"
+	"log"
+
+	"github.com/jinzhu/gorm"
+	"gopkg.in/yaml.v2"
+)
 
 // DB is the instance of a gorm database
 var DB *gorm.DB
@@ -18,4 +25,26 @@ type SensorData struct {
 	GyroX    float64 `gorm:"column:gyroX" json:"gyroX"`
 	GyroY    float64 `gorm:"column:gyroY" json:"gyroY"`
 	GyroZ    float64 `gorm:"column:gyroZ" json:"gyroZ"`
+}
+
+type DB_info struct {
+	Host     string `yaml:"string"`
+	Username string `yaml:"username"`
+}
+
+// Open reads from the database config file (db_info.yaml), then accordingly establishes a localhost connection to the database
+func Open(filename string) {
+	infoStruct := &DB_info{}
+	file, err := ioutil.ReadFile(filename)
+	if err != nil {
+		log.Fatalf("database info file error: %s\n", err)
+	}
+	err = yaml.Unmarshal(file, infoStruct)
+	if err != nil {
+		log.Fatalf("unmarshalling problem: %s\n", err)
+	}
+	DB, err = gorm.Open("mysql", fmt.Sprintf("%s:%s@tcp(localhost:3306)/RocketRadio", infoStruct.User, infoStruct.Password, infoStruct.Port))
+	if err != nil {
+		log.Fatalf("database opening error: %s\n", err)
+	}
 }
