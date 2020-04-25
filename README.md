@@ -4,7 +4,7 @@ Live telecommunication for model rockets
 
 ## Hardware
 
-**See the [bill of materials](info/bill-of-materials.xlsx) for pricing information.**
+**See the [bill of materials](info/bill-of-materials.xlsx) for pricing information. (You must open in in excel or an equivalent spreadsheet viewer)**
 
 - [2x 3.3v arduinos](https://www.sparkfun.com/products/12587)
 
