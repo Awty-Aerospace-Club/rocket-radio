@@ -10,7 +10,7 @@ import (
 )
 
 func init() {
-	dbcrud.Open("../go_code/database-cfg.yaml")
+	dbcrud.Open("../../configs/database-cfg.yaml")
 }
 
 func main() {
