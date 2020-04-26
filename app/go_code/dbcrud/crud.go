@@ -49,6 +49,7 @@ func Open(filename string) {
 	}
 }
 
+// SelectAll returns all SensorData rows in a table
 func (sd *SensorData) SelectAll() error {
 	if err := DB.Find(&sd).Error; err != nil {
 		return err
