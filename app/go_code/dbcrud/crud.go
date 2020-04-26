@@ -27,6 +27,7 @@ type SensorData struct {
 	GyroZ    float64 `gorm:"column:gyroZ" json:"gyroZ"`
 }
 
+// DB_info contains fields which correspond to the YAML keys in the database config file
 type DB_info struct {
 	Host     string `yaml:"string"`
 	Username string `yaml:"username"`
