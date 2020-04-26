@@ -2,4 +2,3 @@
 *.csv
 *.svg
 python_code/database-cfg.yaml
-app/node_modules
