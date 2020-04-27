@@ -11,7 +11,7 @@
 <script>
 let json;
 var ctx = document.getElementById('myChart').getContext('2d');
-$.getJSON("/api/all", function(data) {
+$.getJSON(`${window.location.href}/api/all`, function(data) {
   json = data;
 });
 var myChart = new Chart(ctx, {
