@@ -9,21 +9,21 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <canvas id="myChart" width="400" height="400"></canvas>
 <script>
-let json;
-var ctx = document.getElementById('myChart').getContext('2d');
-$.getJSON(`${window.location.href}/api/all`, function(data) {
-  json = data;
-});
-var myChart = new Chart(ctx, {
-  type: 'line',
-  data: [],
-  options: {
-    title: {
-      display: true,
-      text: 'Sensor Data Readings Throughout Flight'
-    }
-  } 
-});
+  let json;
+  var ctx = document.getElementById('myChart').getContext('2d');
+  $.getJSON(`${window.location.href}/api/all`, function(data) {
+    json = data;
+  });
+  var myChart = new Chart(ctx, {
+    type: 'line',
+    data: [],
+    options: {
+      title: {
+        display: true,
+        text: 'Sensor Data Readings Throughout Flight'
+      }
+    } 
+  });
 </script>
 </body>
 </html>
