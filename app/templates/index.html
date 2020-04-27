@@ -13,7 +13,7 @@ let json;
 var ctx = document.getElementById('myChart').getContext('2d');
 $.getJSON("/api/all", function(data) {
   json = data;
-})
+});
 var myChart = new Chart(ctx, {
   type: 'line',
   data: [],
