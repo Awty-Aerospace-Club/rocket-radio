@@ -15,6 +15,9 @@
     json = data;
   });
   var parsed = json.parse();
+  for (i in parsed.SensorData) {
+
+  }
   var myChart = new Chart(ctx, {
     type: 'line',
     data: [],
