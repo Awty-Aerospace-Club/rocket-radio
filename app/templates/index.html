@@ -12,7 +12,12 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
   type: 'line',
   data: [],
-  options: []
+  options: {
+    title: {
+      display: true,
+      text: 'Sensor Data Readings Throughout Flight'
+    }
+  } 
 });
 </script>
 </body>
