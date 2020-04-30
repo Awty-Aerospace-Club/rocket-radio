@@ -1,5 +1,5 @@
 type SensorData {
-  Time: Float
+  Time: Float!
   Altitude: Float
   AccelX: Float 
   AccelY: Float
