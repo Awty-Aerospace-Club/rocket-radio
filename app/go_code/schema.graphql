@@ -1,0 +1,10 @@
+type SensorData {
+  Time: Float!
+  Altitude: Float
+  AccelX: Float 
+  AccelY: Float
+  AccelZ: Float
+  GyroX: Float
+  GyroY: Float
+  Gyroz: Float
+}
