@@ -27,15 +27,15 @@ type SensorData struct {
 	GyroZ    float64 `gorm:"column:gyroZ" json:"gyroZ"`
 }
 
-// DB_info contains fields which correspond to the YAML keys in the database config file
-type DB_info struct {
+// DBInfo contains fields which correspond to the YAML keys in the database config file
+type DBInfo struct {
 	Host     string `yaml:"host"`
 	Username string `yaml:"username"`
 }
 
 // Open reads from the database config file (db_info.yaml), then accordingly establishes a localhost connection to the database
 func Open(filename string) {
-	infoStruct := &DB_info{}
+	infoStruct := &DBInfo{}
 	file, err := ioutil.ReadFile(filename)
 	if err != nil {
 		log.Fatalf("database info file error: %s\n", err)
