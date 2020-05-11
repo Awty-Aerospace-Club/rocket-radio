@@ -29,7 +29,7 @@ type SensorData struct {
 
 // DB_info contains fields which correspond to the YAML keys in the database config file
 type DB_info struct {
-	Host     string `yaml:"string"`
+	Host     string `yaml:"host"`
 	Username string `yaml:"username"`
 }
 
