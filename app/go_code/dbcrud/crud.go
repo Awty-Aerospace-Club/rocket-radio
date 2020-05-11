@@ -18,7 +18,7 @@ var DB *gorm.DB
 // SensorData serves as the ORM abstraction for the SensorData sql table; it will also be used to marshal json
 type SensorData struct {
 	Time     float64 `gorm:"column:time" json:"time"`
-	Altitude float64 `gorm:"column:altitude" json:altitude"`
+	Altitude float64 `gorm:"column:altitude" json:"altitude"`
 	AccelX   float64 `gorm:"column:accelX" json:"accelX"`
 	AccelY   float64 `gorm:"column:accelY" json:"accelY"`
 	AccelZ   float64 `gorm:"column:accelZ" json:"accelZ"`
