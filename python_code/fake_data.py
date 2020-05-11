@@ -42,7 +42,7 @@ for j in range(10000):
     gyroY = moving_average(gyroYma) if altitude > 0 else 0
     gyroZ = moving_average(gyroZma) if altitude > 0 else 0
 
-    row = [
+    column = [
         time,
         altitude,
         accelX,
@@ -53,8 +53,8 @@ for j in range(10000):
         gyroZ
     ]
 
-    row = [str(round(x, 5)) for x in row]
-    data += "\n" + ",".join(row)
+    column = [str(round(x, 5)) for x in column]
+    data += "\n" + ",".join(column)
 
 with open("fake_data.csv", "w+", newline="") as file:
     print(data, file=file)
