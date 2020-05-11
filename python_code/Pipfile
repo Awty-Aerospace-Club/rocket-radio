@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 csvquery = "*"
 serial = "*"
+pandas = "*"
 
 [dev-packages]
 
