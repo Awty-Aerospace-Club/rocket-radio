@@ -1,5 +1,3 @@
-host:
-  'root' 
+host: 'root' 
 
-username:
-  'tarekali'
+username: 'tarekali'
