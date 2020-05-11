@@ -1,7 +1,7 @@
 import pandas as pd
 import csv
 import matplotlib.pyplot as plt
-headers = ['altitude', 'accelX', 'accelY', 'accelZ', 'accelZ', 'gyroX', 'gyroY', 'gyroZ']
+headers = ['altitude', 'accelX', 'accelY', 'accelZ', 'gyroX', 'gyroY', 'gyroZ']
 df = pd.read_csv("output.csv", names=headers)
 print(df)
 
