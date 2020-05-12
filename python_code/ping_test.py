@@ -10,7 +10,7 @@ def serial_ports():
             s.close()
             result.append(port)
         except (OSError, SerialException):
-            pass
+           print(f"error: {OSError}; {SerialException}") 
     return result
 
 def main():
