@@ -1,0 +1,1 @@
+./scripts/pipenv-automation.sh
