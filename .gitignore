@@ -2,3 +2,4 @@
 *.csv
 *.svg
 python_code/database-cfg.yaml
+.vscode/
