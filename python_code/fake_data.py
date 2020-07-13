@@ -59,5 +59,5 @@ for j in range(10000):
 with open("../csv/fake_data.csv", "w+", newline="") as file:
     print(data, file=file)
 
-dataset = open_csv("../csv/fake_data.csv")
+dataset = open_csv("fake_data.csv")
 dataset.print_table()
