@@ -24,7 +24,7 @@ def serial_ports():
             s.close()
             result.append(port)
         except (OSError, SerialException):
-           raise EnvironmentError("Serial exception/OSError related to serial transaction") 
+            raise EnvironmentError("Serial exception/OSError related to serial transaction") 
     return result
 
 
