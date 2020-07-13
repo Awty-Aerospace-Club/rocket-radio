@@ -10,6 +10,8 @@ Live telecommunication for model rockets
 
 ### Windows:
 
+`windows-run.bat`
+
 ## Hardware
 
 **See the [bill of materials](info/bill-of-materials.xlsx) for pricing information. (You must open in in excel or an equivalent spreadsheet viewer)**
