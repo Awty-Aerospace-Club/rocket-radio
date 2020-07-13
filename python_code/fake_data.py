@@ -56,8 +56,8 @@ for j in range(10000):
     column = [str(round(x, 5)) for x in column]
     data += "\n" + ",".join(column)
 
-with open("fake_data.csv", "w+", newline="") as file:
+with open("../csv/fake_data.csv", "w+", newline="") as file:
     print(data, file=file)
 
-dataset = open_csv("fake_data.csv")
+dataset = open_csv("../csv/fake_data.csv")
 dataset.print_table()

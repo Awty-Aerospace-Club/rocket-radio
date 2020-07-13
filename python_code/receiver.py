@@ -59,7 +59,7 @@ def main():
         print(f"Selected only available port: {port}")
 
     s = Serial(port)
-    file = open("output.csv", "w+", newline="")
+    file = open("../csv/output.csv", "w+", newline="")
 
     print(",".join(fields), file=file)
     while True:
@@ -76,9 +76,9 @@ def main():
 
     file.close()
 
-    dataset = open_csv("output.csv")
+    dataset = open_csv("../csv/output.csv")
     dataset.replace(["gyroX", "gyroY", "gyroZ"], degrees)
-    dataset.save_csv("output.csv")
+    dataset.save_csv("../csv/output.csv")
 
 
 if __name__ == "__main__":
