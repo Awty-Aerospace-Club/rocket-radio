@@ -19,10 +19,7 @@ fields = [
 def serial_ports():
     result = []
     for i in range(1, 257):
-        if sys.platform == 'win32' or sys.platform == 'win64':     
-            port = f"COM{i}"
-        else:
-            port = f"/dev/ttyUSB{i}"       
+        port = f"/dev/ttyUSB{i}"       
         try:
             s = Serial(port)
             s.close()
