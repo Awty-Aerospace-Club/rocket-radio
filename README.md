@@ -13,9 +13,8 @@ the code will run automatically when you turn the arduino on.**
 
 ### Windows:
 
-**Must have python3.8 preinstalled and added to PATH (this can be done during the python3.8 installation by ticking the described box). If this is not done, running `python` or `python3` in cmd will redirect you to Microsoft Store's version of python3.7 (ABSOLUTE BLOAT)**
-
-2. `windows-run.bat`
+2. Install WSL and use it
+3. `./linux-run.sh`
 
 ## Hardware
 
