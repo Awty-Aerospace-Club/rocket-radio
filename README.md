@@ -20,11 +20,11 @@ Live telecommunication for model rockets
 |                    Name                     | Quantity |  Price  | Total Price |                  Link                   |
 | :-----------------------------------------: | :------: | :-----: | :---------: | :-------------------------------------: |
 |               Pro Micro 3.3V                |    1     | \$17.95 |    17.95    | https://www.sparkfun.com/products/12587 |
-|             MPL3115A2 Breakout              |    1     | \$9.95  |   \$9.95    |                 \$9.95                  |
-|              LSM6DS33 Breakout              |    1     | \$5.95  |   \$5.95    |            LSM6DS33 Breakout            |
+|             MPL3115A2 Breakout              |    1     | \$9.95  |   \$9.95    |  https://www.adafruit.com/product/1893  |
+|              LSM6DS33 Breakout              |    1     | \$5.95  |   \$5.95    |  https://www.adafruit.com/product/4480  |
 |       LoRa Radio Transceiver Breakout       |    2     | \$19.95 |   \$39.90   |  https://www.adafruit.com/product/3073  |
 |             100mAh LiPo Battery             |    1     | \$5.95  |   \$5.95    |  https://www.adafruit.com/product/1570  |
-|            LiPo Battery Charger             |    1     | \$6.95  |   \$6.95    |          LiPo Battery Charger           |
+|            LiPo Battery Charger             |    1     | \$6.95  |   \$6.95    |  https://www.adafruit.com/product/1904  |
 |            JST 2P-1.0 Connector             |    1     | \$0.75  |   \$0.75    |  https://www.adafruit.com/product/1769  |
 | 10x 10u Capacitor (optional, only 2 needed) |    1     | \$1.95  |   \$1.95    |  https://www.adafruit.com/product/1769  |
 |                                             |          |         |   \$89.35   |                                         |
