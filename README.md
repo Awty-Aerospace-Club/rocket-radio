@@ -4,8 +4,7 @@ Live telecommunication for model rockets
 
 ## How to run the code
 
-1. **Go into the arduino editor, run `receiver.ino` on your computer, and run `transmitter.ino` on the rocket's arduino. Once you've run the arduino code once, 
-the code will run automatically when you turn the arduino on.**
+1. **Go into the arduino editor, upload `receiver.ino` to a ground arduino plugged into your computer, and upload `transmitter.ino` on the rocket's arduino. Then power the rocket electronics and both arduinos should automatically run their code.**
 
 ### Linux:
 
