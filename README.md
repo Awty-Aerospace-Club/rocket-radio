@@ -17,22 +17,14 @@ Live telecommunication for model rockets
 
 ## Hardware
 
-**See the [bill of materials](info/bill-of-materials.xlsx) for pricing information. (You must open in in excel or an equivalent spreadsheet viewer)**
-
-- [2x 3.3v arduinos](https://www.sparkfun.com/products/12587)
-
-- [2x HC-12 radio modules](https://www.banggood.com/custlink/3KGvMGgRvG)
-
-- [100mAh LiPo battery](https://www.adafruit.com/product/1570)
-
-- [JST connector for battery](https://www.adafruit.com/product/1769)
-
-- [LiPo battery charger](https://www.adafruit.com/product/1904)
-
-- [altitude sensor](https://www.adafruit.com/product/1893)
-
-- [accelerometer & gyro sensor](https://www.adafruit.com/product/4480)
-
-- [antenna (optional)](https://www.amazon.com/NOYITO-Antenna-Omnidirectional-430-470MHz-Connector/dp/B07J6GYKTZ/)
-
-- [2x 10uF capacitor (optional)](https://www.adafruit.com/product/2195)
+|                     Name                    | Quantity |   Price  | Total Price  |                   Link                  |
+|:-------------------------------------------:|:--------:|:--------:|:------------:|:---------------------------------------:|
+|                Pro Micro 3.3V               |     1    |  $17.95  |     17.95    | https://www.sparkfun.com/products/12587 |
+|              MPL3115A2 Breakout             |     1    |   $9.95  |     $9.95    |                  $9.95                  |
+|              LSM6DS33 Breakout              |     1    |   $5.95  |     $5.95    |            LSM6DS33 Breakout            |
+| LoRa Radio Transceiver Breakout             | 2        |  $19.95  |  $39.90      | https://www.adafruit.com/product/3073   |
+| 100mAh LiPo Battery                         | 1        |  $5.95   |  $5.95       | https://www.adafruit.com/product/1570   |
+| LiPo Battery Charger                        | 1        | $6.95    | $6.95        | LiPo Battery Charger                    |
+| JST 2P-1.0 Connector                        | 1        | $0.75    | $0.75        | https://www.adafruit.com/product/1769   |
+| 10x 10u Capacitor (optional, only 2 needed) | 1        |  $1.95   |  $1.95       | https://www.adafruit.com/product/1769   |
+|                                             |          |          |    $89.35    |                                         |
