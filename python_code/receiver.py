@@ -32,7 +32,7 @@ def serial_ports():
 def validate(line):
     try:
         line = line.decode("ASCII")
-        assert len(line) > 3 and line.count(",") == len(fields) and line[-2:] == "\r\n"
+        assert len(line) > 3 and line.count(",") == len(fields) and line[-2:] == "\r\n", "wrong schema"
 
         line = line[:-3]
         for num in line.split(","):
